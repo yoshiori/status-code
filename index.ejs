@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>statuscode</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+      <h1><%= code %> <%= message %></h1>
+      <div><%= detail %></div>
+<dl>
+  <% for(var i in all) { %>
+    <dt><a href="/<%= i %>"><%= i %> <%= all[i].message %></a></dt>
+    <dd><%= all[i].detail %></dd>
+  <% } %>
+</dl>
+参考URL <a href='http://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89'>http://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89</a>
+  <div id="footer"> <a href="mailto:yoshiori@gmail.com">mail</a> | <a href="http://twitter.com/yoshiori/">@yoshiori</a> | <a href="http://yoshiori.org/">site</a></div>
+</body>
+</html>
