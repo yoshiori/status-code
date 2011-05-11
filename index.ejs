@@ -6,11 +6,11 @@
 </head>
 <body>
       <h1><%= code %> <%= message %></h1>
-      <div><%= detail %></div>
+      <div><p><%- detail.replace("\n","<br />") %></p></div>
 <dl>
   <% for(var i in all) { %>
     <dt><a href="/<%= i %>"><%= i %> <%= all[i].message %></a></dt>
-    <dd><%= all[i].detail %></dd>
+    <dd><p><%- all[i].detail.replace("\n","<br />") %></p></dd>
   <% } %>
 </dl>
 参考URL <a href='http://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89'>http://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89</a>
